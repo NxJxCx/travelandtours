@@ -224,7 +224,8 @@ public class TravelAndTours {
                 default:
                     isDone = true;
             }
-            getch();
+            if (!isDone)
+                getch();
         }
         println("Thank You and Goodbye,", tourist, "!");
     }
@@ -236,6 +237,7 @@ class Tourist {
     private double price;
     private String[] tourists;
     private int touristCount;
+    private String packageTitle;
 
     static String capitalize(String string) {
         String[] splits = string.split(" ");
@@ -245,48 +247,62 @@ class Tourist {
         return String.join(" ", splits);
     }
 
-    Tourist(double price) {
-      this.price = price;
-      this.touristCount = 0;
+    Tourist(String packageTitle, double price) {
+        this.packageTitle = packageTitle;
+        this.price = price;
+        this.touristCount = 0;
     }
     
     public double getPrice() {
-      return Math.round(this.price * 100) * 0.01;
+        return Math.round(this.price * 100) * 0.01;
     }
 
     public int getNumberOfTourist() {
-      return this.touristCount;
+        return this.touristCount;
     }
 
     public double getTotalPrice() {
-      return Math.round(this.touristCount * this.price * 100) * 0.01;
+        return Math.round(this.touristCount * this.price * 100) * 0.01;
     }
-    
+
     public boolean register() {
-      int touristCount = Integer.parseInt(TravelAndTours.inputString("How many tourist will be registering?").strip());
-      if (touristCount < 1) {
-          TravelAndTours.println("Invalid number of tourists!");
-          return false;
-      }
-      this.touristCount = touristCount;
-      TravelAndTours.println("-------------------------------");
-      TravelAndTours.println("Package Price\tPHP\t" + this.getPrice());
-      TravelAndTours.println("No. of Tourists\t\tx" + (touristCount > 9 ? "    " : "     ") +  touristCount);
-      TravelAndTours.println("-------------------------------");
-      TravelAndTours.println("Total Price\tPHP\t" + this.getTotalPrice());
-      TravelAndTours.println("-------------------------------");
-      boolean confirm = TravelAndTours.confirmation("Confirm package?");
-      if (!confirm) {
-          this.touristCount = 0;
-          TravelAndTours.println("Cancelled.");
-          return false;
-      }
-      TravelAndTours.println("Registration: (" + this.touristCount, "Tourists)");
-      TravelAndTours.println("(Write the Full Name of each Tourists)");
-      tourists = new String[touristCount];
-      for (int i = 0; i < touristCount; i++) {
-        tourists[i] = capitalize(TravelAndTours.inputString((i+1) + ")"));
-      }
-      return true;
+        int touristCount = Integer.parseInt(TravelAndTours.inputString("How many tourist will be registering?").strip());
+        if (touristCount < 1) {
+            TravelAndTours.println("Invalid number of tourists!");
+            return false;
+        }
+        this.touristCount = touristCount;
+        TravelAndTours.println("-------------------------------");
+        TravelAndTours.println("Package Price\tPHP\t" + this.getPrice());
+        TravelAndTours.println("No. of Tourists\t\tx" + (touristCount > 9 ? "    " : "     ") +  touristCount);
+        TravelAndTours.println("-------------------------------");
+        TravelAndTours.println("Total Price\tPHP\t" + this.getTotalPrice());
+        TravelAndTours.println("-------------------------------");
+        boolean confirm = TravelAndTours.confirmation("Confirm package?");
+        if (!confirm) {
+            this.touristCount = 0;
+            TravelAndTours.println("Cancelled.");
+            return false;
+        }
+        TravelAndTours.println("Registration: (" + this.touristCount, "Tourists)");
+        TravelAndTours.println("(Write the Full Name of each Tourists)");
+        tourists = new String[touristCount];
+        for (int i = 0; i < touristCount; i++) {
+            tourists[i] = capitalize(TravelAndTours.inputString((i+1) + ")"));
+        }
+        return true;
+    }
+
+    public void ShowTouristDetails() {
+        System.out.println("#*************************************************");
+        System.out.println("# " + this.packageTitle);
+        System.out.println("# Package Price: PHP " + this.price + " x " + this.touristCount + " tourists");
+        System.out.println("# Total Price: PHP " + this.getTotalPrice());
+        System.out.println("#--------------------------------------------------");
+        System.out.println("# Tourists: ");
+        for (int i = 0; i < this.tourists.length; i++) {
+            System.out.println((i+1) + ") " + this.tourists[i];
+        }
+        System.out.println("#*************************************************");
     }
 }
