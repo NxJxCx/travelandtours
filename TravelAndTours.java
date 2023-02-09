@@ -256,7 +256,9 @@ class Tourist {
           return false;
       }
       this.touristCount = touristCount;
-      TravelAndTours.println("Total Price: PHP " + this.getTotalPrice());
+      TravelAndTours.println("Package Price\tPHP\t" + this.getPrice());
+      TravelAndTours.println("No. of Tourists\tx\t" + touristCount)
+      TravelAndTours.println("Total Price\tPHP\t" + this.getTotalPrice());
       boolean confirm = TravelAndTours.confirmation("Confirm package?");
       if (!confirm) {
           this.touristCount = 0;
