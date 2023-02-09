@@ -44,9 +44,9 @@ public class TravelAndTours {
     static char selection(String title, boolean hasQuit, String... options) {
         if (options.length == 0)
             return 'X';
-        String bullets = "abcdefghijklmnopqrstuvwx0";
+        String bullets = "x0abcdefghijklmnopqrstuvw";
         println(title);
-        for (int i = 0; i < options.length; i++) {
+        for (int i = 2; i < options.length + 2; i++) {
             println(bullets.substring(i,i+1), ")", options[i]);
         }
         if (hasQuit)
@@ -54,7 +54,7 @@ public class TravelAndTours {
         char selected = '\0';
         while (true) {
             selected = inputString("Enter your choice:").strip().charAt(0);
-            if (bullets.substring(0, options.length).contains(String.valueOf(selected).toLowerCase()))
+            if (bullets.substring(0, options.length + 2).contains(String.valueOf(selected).toLowerCase()))
                 return selected;
         }
     }
@@ -73,7 +73,7 @@ public class TravelAndTours {
     public static void main(String[] args) {
         String tourist = "";
         boolean isDone = false;
-        while (true) {
+        while (!isDone) {
             do {
                 tourist = inputString("Enter your Name:");
             } while (tourist.equals(""));
@@ -215,17 +215,9 @@ public class TravelAndTours {
                         touristDetails.register();
                     }
                     break;
-                case 'x':
-                    isDone = true;
-                    break;
-                case '0':
-                    isDone = true;
-                    break;
                 default:
-                    // do nothing
+                    isDone = true;
             }
-            if (isDone)
-                break;
             getch();
         }
         println("Thank You and Goodbye,", tourist, "!");
