@@ -63,7 +63,7 @@ public class TravelAndTours {
         return selection(title, false, options);
     }
 
-    static char confirmation(String title) {
+    static boolean confirmation(String title) {
         char answer = inputString(title + "(y/N)").strip().charAt(0);
         if (answer == 'y' || answer == 'Y')
           return true;
