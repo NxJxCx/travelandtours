@@ -91,6 +91,7 @@ public class TravelAndTours {
             );
             Tourist touristDetails;
             /* Package Details */
+            boolean c;
             switch (packageChoice) {
                 case 'a':
                     println("4D3N Boracay Package with Airfare | Movenpick Resort from Manila:");
@@ -106,7 +107,7 @@ public class TravelAndTours {
                     println("\t-", "Access to swimming pool and selected resort facilities");
                     println("\t-", "All environmental, port fees, and all other applicable taxes");
                     println("\tPRICE:", "PHP", "30,752.00");
-                    boolean c = confirmation("Confirm selected package? (y/N) ");
+                    c = confirmation("Confirm selected package? (y/N) ");
                     if (c)
                         println("Cancelled.");
                     else {
@@ -124,7 +125,7 @@ public class TravelAndTours {
                     println("\t-", "Visit at resort's natural Underground Cambagat Cave");
                     println("\t-", "All environmental, port fees, and all other applicable taxes");
                     println("\tPRICE:", "PHP", "26,359.00");
-                    boolean c = confirmation("Confirm selected package?");
+                    c = confirmation("Confirm selected package?");
                     if (c)
                         println("Cancelled.");
                     else {
@@ -143,7 +144,7 @@ public class TravelAndTours {
                     println("\t-", "BlueCARES Sanitation Kit");
                     println("\t-", "All environmental, port fees, and all other applicable taxes");
                     println("\tPRICE:", "PHP", "19,999.00");
-                    boolean c = confirmation("Confirm selected package?");
+                    c = confirmation("Confirm selected package?");
                     if (c)
                         println("Cancelled.");
                     else {
@@ -167,7 +168,7 @@ public class TravelAndTours {
                     println("\t-", "Domestic Travel Insurance (Up to 21 days travel duration)");
                     println("\t-", "All environmental fees, port fees, and all other applicable taxes");
                     println("\tPRICE:", "PHP", "89,075.00");
-                    boolean c = confirmation("Confirm selected package?");
+                    c = confirmation("Confirm selected package?");
                     if (c)
                         println("Cancelled.");
                     else {
@@ -189,7 +190,7 @@ public class TravelAndTours {
                     println("\t-", "");
                     println("\t-", "");
                     println("\tPRICE:", "PHP", ".00");
-                    boolean c = confirmation("Confirm selected package?");
+                    c = confirmation("Confirm selected package?");
                     if (c)
                         println("Cancelled.");
                     else {
@@ -209,7 +210,7 @@ public class TravelAndTours {
                     println("\t-", "Free Drinking Water");
                     println("\t-", "All environmental, port fees, and all other applicable taxes");
                     println("\tPRICE:", "PHP", "20,999.00");
-                    boolean c = confirmation("Confirm selected package?");
+                    c = confirmation("Confirm selected package?");
                     if (c)
                         println("Cancelled.");
                     else {
