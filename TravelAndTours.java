@@ -310,11 +310,11 @@ class Tourist {
         System.out.println("# " + this.packageTitle);
         System.out.println("# Package Price: PHP " + this.price + " x " + this.touristCount + " tourists");
         System.out.println("# Total Price: PHP " + this.getTotalPrice());
-        System.out.println("#--------------------------------------------------");
+        System.out.println("# ");
         System.out.println("# Tourists: ");
         for (int i = 0; i < this.tourists.length; i++) {
             System.out.println("# " + (i+1) + ") " + this.tourists[i]);
         }
-        System.out.println("#*************************************************");
+        System.out.println("\n#*************************************************");
     }
 }
