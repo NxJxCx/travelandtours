@@ -65,7 +65,7 @@ public class TravelAndTours {
 
     static char confirmation(String title) {
         char answer = inputString(title + "(y/N)").strip().charAt(0);
-        if (answer == 'y' || answer == 'Y') {
+        if (answer == 'y' || answer == 'Y')
           return true;
         return false;
     }
