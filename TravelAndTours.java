@@ -119,8 +119,10 @@ public class TravelAndTours {
                     if (!c)
                         println("Cancelled.");
                     else {
-                        touristDetails = new Tourist(30752.00);
+                        touristDetails = new Tourist("4D3N Boracay Package with Airfare | Movenpick Resort from Manila", 30752.00);
                         touristDetails.register();
+                        touristsDetails.showTouristDetails();
+                        System.out.println("Enjoy your trip!");
                     }
                     break;
                 case 'b':
@@ -137,8 +139,10 @@ public class TravelAndTours {
                     if (!c)
                         println("Cancelled.");
                     else {
-                        touristDetails = new Tourist(26359.00);
+                        touristDetails = new Tourist("4D3N Bohol Package with Airfare | Mithi Resort from Manila", 26359.00);
                         touristDetails.register();
+                        touristsDetails.showTouristDetails();
+                        System.out.println("Enjoy your trip!");
                     }
                     break;
                 case 'c':
@@ -154,8 +158,10 @@ public class TravelAndTours {
                     if (!c)
                         println("Cancelled.");
                     else {
-                        touristDetails = new Tourist(12488.00);
+                        touristDetails = new Tourist("4D3N Bohol Package | Bohol Beach Club Resort with Transfers + Daily Breakfast", 12488.00);
                         touristDetails.register();
+                        touristsDetails.showTouristDetails();
+                        System.out.println("Enjoy your trip!");
                     }
                     break;
                 case 'd':
@@ -173,8 +179,10 @@ public class TravelAndTours {
                     if (!c)
                         println("Cancelled.");
                     else {
-                        touristDetails = new Tourist(19999.00);
+                        touristDetails = new Tourist("4D3N Cebu Package with Airfare | Bluewater Maribago Resort from Manila", 19999.00);
                         touristDetails.register();
+                        touristsDetails.showTouristDetails();
+                        System.out.println("Enjoy your trip!");
                     }
                     break;
                 case 'e':
@@ -197,8 +205,10 @@ public class TravelAndTours {
                     if (!c)
                         println("Cancelled.");
                     else {
-                        touristDetails = new Tourist(89075.00);
+                        touristDetails = new Tourist("12-Day Adventure & Sightseeing Vacation Package to Boracay, Cebu & Bohol with Flights from Manila", 89075.00);
                         touristDetails.register();
+                        touristsDetails.showTouristDetails();
+                        System.out.println("Enjoy your trip!");
                     }
                     break;
                 case 'f':
@@ -217,8 +227,10 @@ public class TravelAndTours {
                     if (!c)
                         println("Cancelled.");
                     else {
-                        touristDetails = new Tourist(20999.00);
+                        touristDetails = new Tourist("4D3N Siargao Package with Airfare | Himaya Resort from Manila + Island Hopping Tour", 20999.00);
                         touristDetails.register();
+                        touristsDetails.showTouristDetails();
+                        System.out.println("Enjoy your trip!");
                     }
                     break;
                 default:
@@ -293,7 +305,7 @@ class Tourist {
         return true;
     }
 
-    public void ShowTouristDetails() {
+    public void showTouristDetails() {
         System.out.println("#*************************************************");
         System.out.println("# " + this.packageTitle);
         System.out.println("# Package Price: PHP " + this.price + " x " + this.touristCount + " tourists");
