@@ -53,8 +53,10 @@ public class TravelAndTours {
             println("X or 0", ")", "Quit");
         char selected = '\0';
         while (true) {
-            selected = inputString("Enter your choice:").strip().charAt(0);
-            println("entered: " + selected + ";");
+            String tmp = inputString("Enter your choice:").strip();
+            if (tmp.length == 0)
+                continue; // repeat
+            selected = tmp.charAt(0);
             if (bullets.substring(0, options.length + 2).contains(String.valueOf(selected).toLowerCase()))
                 return selected;
         }
@@ -65,7 +67,10 @@ public class TravelAndTours {
     }
 
     static boolean confirmation(String title) {
-        char answer = inputString(title + " (y/N)").strip().charAt(0);
+        String tmp = inputString(title + " (y/N)").strip();
+        if (tmp.length == 0)
+            return false;
+        char answer = tmp.charAt(0);
         if (answer == 'y' || answer == 'Y')
           return true;
         return false;
