@@ -6,8 +6,7 @@ import java.util.*;
 public class TravelAndTours {
 
     static void println(String... messages) {
-        int i;
-        for (i = 0; i < messages.length; i++) {
+        for (int i = 0; i < messages.length; i++) {
             System.out.print(messages[i]);
             if (i + 1 != messages.length) {
                 System.out.print(" ");
@@ -18,8 +17,7 @@ public class TravelAndTours {
     }
 
     static void print(String... messages) {
-        int i;
-        for (i = 0; i < messages.length; i++) {
+        for (int i = 0; i < messages.length; i++) {
             System.out.print(messages[i]);
             if (i + 1 != messages.length) {
                 System.out.print(" ");
