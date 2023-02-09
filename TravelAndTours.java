@@ -259,6 +259,7 @@ class Tourist {
       TravelAndTours.println("-------------------------------");
       TravelAndTours.println("Package Price\tPHP\t" + this.getPrice());
       TravelAndTours.println("No. of Tourists\t\tx    " + touristCount);
+      TravelAndTours.println("-------------------------------");
       TravelAndTours.println("Total Price\tPHP\t" + this.getTotalPrice());
       TravelAndTours.println("-------------------------------");
       boolean confirm = TravelAndTours.confirmation("Confirm package?");
