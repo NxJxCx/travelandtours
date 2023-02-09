@@ -248,14 +248,14 @@ class Tourist {
           return false;
       }
       this.touristCount = touristCount;
-      TravelAndTours.println("Total Price: PHP", this.getTotalPrice().toString());
+      TravelAndTours.println("Total Price: PHP " + this.getTotalPrice());
       boolean confirm = TravelAndTours.confirmation("Confirm package?");
       if (!confirm) {
           this.touristCount = 0;
           return false;
       }
       TravelAndTours.println("Registration: (", this.touristCount.toString(), "Tourists)");
-      tourist = new String[touristCount];
+      tourists = new String[touristCount];
       for (int i = 0; i < touristCount; i++) {
         tourists[i] = TravelAndTours.inputString((i+1) + ")");
       }
