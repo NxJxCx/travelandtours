@@ -269,6 +269,7 @@ class Tourist {
           return false;
       }
       TravelAndTours.println("Registration: (" + this.touristCount, "Tourists)");
+      TravelAndTours.println("(Write the Full Name of each Tourists)");
       tourists = new String[touristCount];
       for (int i = 0; i < touristCount; i++) {
         tourists[i] = TravelAndTours.inputString((i+1) + ")");
