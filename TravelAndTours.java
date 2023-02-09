@@ -254,7 +254,7 @@ class Tourist {
           this.touristCount = 0;
           return false;
       }
-      TravelAndTours.println("Registration: (", this.touristCount.toString(), "Tourists)");
+      TravelAndTours.println("Registration: (" + this.touristCount, "Tourists)");
       tourists = new String[touristCount];
       for (int i = 0; i < touristCount; i++) {
         tourists[i] = TravelAndTours.inputString((i+1) + ")");
