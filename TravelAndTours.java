@@ -155,8 +155,7 @@ public class TravelAndTours {
                     println("\t-", "Roundtrip Airfare via Philippine Airlines | PR1845/1854 Manila - Cebu and PR1860 Cebu - Manila");
                     println("\t-", "Economy class seat with baggage allowance of 10 kilos");
                     println("\t-", "3 nights accommodation at Bluewater Maribago - Deluxe Room (Max. Occupancy - 2 Adults)");
-                    println("\t-", "Daily Breakfast
-");
+                    println("\t-", "Daily Breakfast");
                     println("\t-", "Roundtrip airport transfers");
                     println("\t-", "One-time Bluewater Coolers");
                     println("\t-", "BlueCARES Sanitation Kit");
