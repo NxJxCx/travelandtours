@@ -82,6 +82,7 @@ public class TravelAndTours {
             println("|**** Travel and Tours Packages ****|");
             char packageChoice = selection(
                 "Choose a package:",
+                true,
                 "4D3N Boracay Package with Airfare | Movenpick Resort from Manila",
                 "4D3N Bohol Package with Airfare | Mithi Resort from Manila",
                 "4D3N Bohol Package | Bohol Beach Club Resort with Transfers + Daily Breakfast",
