@@ -92,8 +92,8 @@ public class TravelAndTours {
             Tourist touristDetails;
             /* Package Details */
             boolean c;
-            switch (packageChoice) {
-                case 'a' || 'A':
+            switch (String.valueOf(packageChoice).toLowerCase().charAt(0)) {
+                case 'a':
                     println("4D3N Boracay Package with Airfare | Movenpick Resort from Manila:");
                     println("\t-", "Roundtrip airfare via Philippine Airlines | Manila - Caticlan - Manila");
                     println("\t-", "Economy class seat with baggage allowance of 10 kilos");
