@@ -90,6 +90,7 @@ public class TravelAndTours {
                 "4D3N Siargao Package with Airfare | Himaya Resort from Manila + Island Hopping Tour"
             );
             Tourist touristDetails;
+            System.out.println();
             /* Package Details */
             boolean c;
             switch (String.valueOf(packageChoice).toLowerCase().charAt(0)) {
