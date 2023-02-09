@@ -306,7 +306,7 @@ class Tourist {
     }
 
     public void showTouristDetails() {
-        System.out.println("#*************************************************");
+        System.out.println("\n#*************************************************");
         System.out.println("# " + this.packageTitle);
         System.out.println("# Package Price: PHP " + this.price + " x " + this.touristCount + " tourists");
         System.out.println("# Total Price: PHP " + this.getTotalPrice());
