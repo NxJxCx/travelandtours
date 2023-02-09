@@ -258,7 +258,7 @@ class Tourist {
       this.touristCount = touristCount;
       TravelAndTours.println("-------------------------------");
       TravelAndTours.println("Package Price\tPHP\t" + this.getPrice());
-      TravelAndTours.println("No. of Tourists\t\tx    " + touristCount);
+      TravelAndTours.println("No. of Tourists\t\tx" + (touristCount > 9) ? "    " : "     ") +  touristCount);
       TravelAndTours.println("-------------------------------");
       TravelAndTours.println("Total Price\tPHP\t" + this.getTotalPrice());
       TravelAndTours.println("-------------------------------");
