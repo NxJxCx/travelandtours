@@ -54,6 +54,7 @@ public class TravelAndTours {
         char selected = '\0';
         while (true) {
             selected = inputString("Enter your choice:").strip().charAt(0);
+            println("entered: " + selected + ";");
             if (bullets.substring(0, options.length + 2).contains(String.valueOf(selected).toLowerCase()))
                 return selected;
         }
