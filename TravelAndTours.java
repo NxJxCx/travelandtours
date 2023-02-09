@@ -260,6 +260,7 @@ class Tourist {
       boolean confirm = TravelAndTours.confirmation("Confirm package?");
       if (!confirm) {
           this.touristCount = 0;
+          TravelAndTours.println("Cancelled.");
           return false;
       }
       TravelAndTours.println("Registration: (" + this.touristCount, "Tourists)");
