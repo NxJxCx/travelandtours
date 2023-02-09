@@ -236,19 +236,32 @@ class Tourist {
     private double price;
     private String[] tourists;
     private int touristCount;
+
+    static String capitalize(String string) {
+        String[] splits = string.split(" ");
+        for (int i = 0; i < splits.length; i++) {
+            splits[i] = splits[i].substring(0, 1).toUpperCase() + splits[i].substring(1);
+        }
+        return String.join(" ", splits);
+    }
+
     Tourist(double price) {
       this.price = price;
       this.touristCount = 0;
     }
+    
     public double getPrice() {
       return Math.round(this.price * 100) * 0.01;
     }
+
     public int getNumberOfTourist() {
       return this.touristCount;
     }
+
     public double getTotalPrice() {
       return Math.round(this.touristCount * this.price * 100) * 0.01;
     }
+    
     public boolean register() {
       int touristCount = Integer.parseInt(TravelAndTours.inputString("How many tourist will be registering?").strip());
       if (touristCount < 1) {
@@ -272,7 +285,7 @@ class Tourist {
       TravelAndTours.println("(Write the Full Name of each Tourists)");
       tourists = new String[touristCount];
       for (int i = 0; i < touristCount; i++) {
-        tourists[i] = TravelAndTours.inputString((i+1) + ")");
+        tourists[i] = capitalize(TravelAndTours.inputString((i+1) + ")"));
       }
       return true;
     }
