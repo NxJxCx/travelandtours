@@ -134,13 +134,31 @@ public class TravelAndTours {
                     }
                     break;
                 case 'c':
+                    println("4D3N Bohol Package | Bohol Beach Club Resort with Transfers + Daily Breakfast:");
+                    println("\t-", "3 nights accommodation at Bohol Beach Club - Deluxe Room (Max. Occupancy of 2 Adults)");
+                    println("\t-", "Daily breakfast");
+                    println("\t-", "F&B Credits worth PHP1,500 per person");
+                    println("\t-", "20 mins glass bottom boat tour");
+                    println("\t-", "Roundtrip airport transfers");
+                    println("\t-", "All environmental, port fees, and all other applicable taxes");
+                    println("\tPRICE:", "PHP", "12,488.00");
+                    c = confirmation("Confirm selected package?");
+                    if (c)
+                        println("Cancelled.");
+                    else {
+                        touristDetails = new Tourist(12488.00);
+                        touristDetails.register();
+                    }
+                    break;
+                case 'd':
                     println("4D3N Cebu Package with Airfare | Bluewater Maribago Resort from Manila:");
                     println("\t-", "Roundtrip Airfare via Philippine Airlines | PR1845/1854 Manila - Cebu and PR1860 Cebu - Manila");
                     println("\t-", "Economy class seat with baggage allowance of 10 kilos");
                     println("\t-", "3 nights accommodation at Bluewater Maribago - Deluxe Room (Max. Occupancy - 2 Adults)");
-                    println("\t-", "Daily Breakfas");
+                    println("\t-", "Daily Breakfast
+");
                     println("\t-", "Roundtrip airport transfers");
-                    println("\t-", "One-time Bluewater Coolerss");
+                    println("\t-", "One-time Bluewater Coolers");
                     println("\t-", "BlueCARES Sanitation Kit");
                     println("\t-", "All environmental, port fees, and all other applicable taxes");
                     println("\tPRICE:", "PHP", "19,999.00");
@@ -152,7 +170,7 @@ public class TravelAndTours {
                         touristDetails.register();
                     }
                     break;
-                case 'd':
+                case 'e':
                     println("12-Day Adventure & Sightseeing Vacation Package to Boracay, Cebu & Bohol with Flights from Manila:");
                     println("\t-", "11 nights accommodation in a deluxe level hotel or similar (Manila, Bohol, Cebu & Boracay)");
                     println("\t-", "One-way airline economy seat class with 7kgs carry-on baggage and 20kgs check-in baggage via Philippine Airlines (Manila-Bohol, Cebu-Caticlan & Caticlan-Manila)");
@@ -173,28 +191,6 @@ public class TravelAndTours {
                         println("Cancelled.");
                     else {
                         touristDetails = new Tourist(89075.00);
-                        touristDetails.register();
-                    }
-                    break;
-                case 'e':
-                    println("4D3N Bohol Package with Airfare | Mithi Resort from Manila:");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\tPRICE:", "PHP", ".00");
-                    c = confirmation("Confirm selected package?");
-                    if (c)
-                        println("Cancelled.");
-                    else {
-                        touristDetails = new Tourist(20,359.00);
                         touristDetails.register();
                     }
                     break;
