@@ -47,7 +47,7 @@ public class TravelAndTours {
         String bullets = "x0abcdefghijklmnopqrstuvw";
         println(title);
         for (int i = 2; i < options.length + 2; i++) {
-            println(bullets.substring(i,i+1), ")", options[i]);
+            println(bullets.substring(i,i+1), ")", options[i-2]);
         }
         if (hasQuit)
             println("X or 0", ")", "Quit");
