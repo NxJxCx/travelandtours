@@ -73,7 +73,7 @@ public class TravelAndTours {
     public static void main(String[] args) {
         String tourist = "";
         boolean isDone = false;
-        while (!isDone) {
+        while (true) {
             do {
                 tourist = inputString("Enter your Name:");
             } while (tourist.equals(""));
@@ -218,6 +218,8 @@ public class TravelAndTours {
                 default:
                     isDone = true;
             }
+            if (isDone)
+                break;
             getch();
         }
         println("Thank You and Goodbye,", tourist, "!");
