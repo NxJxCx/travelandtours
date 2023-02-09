@@ -64,7 +64,7 @@ public class TravelAndTours {
     }
 
     static boolean confirmation(String title) {
-        char answer = inputString(title + "(y/N)").strip().charAt(0);
+        char answer = inputString(title + " (y/N)").strip().charAt(0);
         if (answer == 'y' || answer == 'Y')
           return true;
         return false;
@@ -109,7 +109,7 @@ public class TravelAndTours {
                     println("\t-", "All environmental, port fees, and all other applicable taxes");
                     println("\tPRICE:", "PHP", "30,752.00");
                     c = confirmation("Confirm selected package? (y/N) ");
-                    if (c)
+                    if (!c)
                         println("Cancelled.");
                     else {
                         touristDetails = new Tourist(30752.00);
@@ -127,7 +127,7 @@ public class TravelAndTours {
                     println("\t-", "All environmental, port fees, and all other applicable taxes");
                     println("\tPRICE:", "PHP", "26,359.00");
                     c = confirmation("Confirm selected package?");
-                    if (c)
+                    if (!c)
                         println("Cancelled.");
                     else {
                         touristDetails = new Tourist(26359.00);
@@ -144,7 +144,7 @@ public class TravelAndTours {
                     println("\t-", "All environmental, port fees, and all other applicable taxes");
                     println("\tPRICE:", "PHP", "12,488.00");
                     c = confirmation("Confirm selected package?");
-                    if (c)
+                    if (!c)
                         println("Cancelled.");
                     else {
                         touristDetails = new Tourist(12488.00);
@@ -163,7 +163,7 @@ public class TravelAndTours {
                     println("\t-", "All environmental, port fees, and all other applicable taxes");
                     println("\tPRICE:", "PHP", "19,999.00");
                     c = confirmation("Confirm selected package?");
-                    if (c)
+                    if (!c)
                         println("Cancelled.");
                     else {
                         touristDetails = new Tourist(19999.00);
@@ -187,7 +187,7 @@ public class TravelAndTours {
                     println("\t-", "All environmental fees, port fees, and all other applicable taxes");
                     println("\tPRICE:", "PHP", "89,075.00");
                     c = confirmation("Confirm selected package?");
-                    if (c)
+                    if (!c)
                         println("Cancelled.");
                     else {
                         touristDetails = new Tourist(89075.00);
@@ -207,7 +207,7 @@ public class TravelAndTours {
                     println("\t-", "All environmental, port fees, and all other applicable taxes");
                     println("\tPRICE:", "PHP", "20,999.00");
                     c = confirmation("Confirm selected package?");
-                    if (c)
+                    if (!c)
                         println("Cancelled.");
                     else {
                         touristDetails = new Tourist(20999.00);
