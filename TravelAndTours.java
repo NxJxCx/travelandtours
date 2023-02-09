@@ -105,78 +105,73 @@ public class TravelAndTours {
                     println("\t-", "Complimentary bottled water replenished daily");
                     println("\t-", "Access to swimming pool and selected resort facilities");
                     println("\t-", "All environmental, port fees, and all other applicable taxes");
-                    println("\tPRICE:", "PHP", "20,359.00");
+                    println("\tPRICE:", "PHP", "30,752.00");
                     boolean c = confirmation("Confirm selected package? (y/N) ");
                     if (c)
                         println("Cancelled.");
                     else {
-                        touristDetails = new Tourist(20,359.00);
+                        touristDetails = new Tourist(30752.00);
                         touristDetails.register();
                     }
                     break;
                 case 'b':
                     println("4D3N Bohol Package with Airfare | Mithi Resort from Manila:");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\tPRICE:", "PHP", ".00");
+                    println("\t-", "Roundtrip airfare via Philippine Airlines | PR2773 Manila - Bohol and PR2778 Bohol - Manila");
+                    println("\t-", "Economy class seat with baggage allowance of 10 kilos");
+                    println("\t-", "3 nights accommodation at Mithi Resort & Spa - Superior Room (Max. Occupancy of 2 Adults)");
+                    println("\t-", "Daily Breakfast");
+                    println("\t-", "Roundtrip Airport Transfers by Mithi Resort & Spa");
+                    println("\t-", "Visit at resort's natural Underground Cambagat Cave");
+                    println("\t-", "All environmental, port fees, and all other applicable taxes");
+                    println("\tPRICE:", "PHP", "26,359.00");
                     boolean c = confirmation("Confirm selected package?");
                     if (c)
                         println("Cancelled.");
                     else {
-                        touristDetails = new Tourist(20,359.00);
+                        touristDetails = new Tourist(26359.00);
                         touristDetails.register();
                     }
                     break;
                 case 'c':
-                    println("4D3N Bohol Package with Airfare | Mithi Resort from Manila:");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\tPRICE:", "PHP", ".00");
+                    println("4D3N Cebu Package with Airfare | Bluewater Maribago Resort from Manila:");
+                    println("\t-", "Roundtrip Airfare via Philippine Airlines | PR1845/1854 Manila - Cebu and PR1860 Cebu - Manila");
+                    println("\t-", "Economy class seat with baggage allowance of 10 kilos");
+                    println("\t-", "3 nights accommodation at Bluewater Maribago - Deluxe Room (Max. Occupancy - 2 Adults)");
+                    println("\t-", "Daily Breakfas");
+                    println("\t-", "Roundtrip airport transfers");
+                    println("\t-", "One-time Bluewater Coolerss");
+                    println("\t-", "BlueCARES Sanitation Kit");
+                    println("\t-", "All environmental, port fees, and all other applicable taxes");
+                    println("\tPRICE:", "PHP", "19,999.00");
                     boolean c = confirmation("Confirm selected package?");
                     if (c)
                         println("Cancelled.");
                     else {
-                        touristDetails = new Tourist(20,359.00);
+                        touristDetails = new Tourist(19999.00);
                         touristDetails.register();
                     }
                     break;
                 case 'd':
-                    println("4D3N Bohol Package with Airfare | Mithi Resort from Manila:");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\tPRICE:", "PHP", ".00");
+                    println("12-Day Adventure & Sightseeing Vacation Package to Boracay, Cebu & Bohol with Flights from Manila:");
+                    println("\t-", "11 nights accommodation in a deluxe level hotel or similar (Manila, Bohol, Cebu & Boracay)");
+                    println("\t-", "One-way airline economy seat class with 7kgs carry-on baggage and 20kgs check-in baggage via Philippine Airlines (Manila-Bohol, Cebu-Caticlan & Caticlan-Manila)");
+                    println("\t-", "One-way ferry business seat class with 15kgs carry-on baggage and 20kgs check-in baggage via Oceanjet (Tagbilaran-Cebu)");
+                    println("\t-", "All private airconditioned airport & seaport transfers in Manila, Bohol, Cebu & Boracay");
+                    println("\t-", "Bohol Countryside Tour with Loboc River Cruise Lunch & Transfers (Day 4)");
+                    println("\t-", "Bohol Island Hopping Tour at Balicasag & Virgin Islands with Dolphin Watching (Day 5)");
+                    println("\t-", "Cebu City & Highlands Vista Private Tour with Transfers (Day 7)");
+                    println("\t-", "Cebu Kawasan Falls Canyoneering, Moalboal Island Hopping & Sardine Run Tour with Lunch & Transfers (Day 8 - Canyoneering is Optional)");
+                    println("\t-", "Boracay Shared Island Hopping & Snorkeling Tour with Lunch, Transfers & Kawa Hot Bath (Day 10)");
+                    println("\t-", "English-speaking tour guides");
+                    println("\t-", "Complimentary Wi-Fi access and use of facilities in the hotel");
+                    println("\t-", "Domestic Travel Insurance (Up to 21 days travel duration)");
+                    println("\t-", "All environmental fees, port fees, and all other applicable taxes");
+                    println("\tPRICE:", "PHP", "89,075.00");
                     boolean c = confirmation("Confirm selected package?");
                     if (c)
                         println("Cancelled.");
                     else {
-                        touristDetails = new Tourist(20,359.00);
+                        touristDetails = new Tourist(89075.00);
                         touristDetails.register();
                     }
                     break;
@@ -203,24 +198,22 @@ public class TravelAndTours {
                     }
                     break;
                 case 'f':
-                    println("4D3N Bohol Package with Airfare | Mithi Resort from Manila:");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\t-", "");
-                    println("\tPRICE:", "PHP", ".00");
+                    println("4D3N Siargao Package with Airfare | Himaya Resort from Manila + Island Hopping Tour:");
+                    println("\t-", "Roundtrip airfare via Philippine Airlines | PR2971 Manila - Siargao and PR2972 Siargao - Manila");
+                    println("\t-", "3 Nights Accommodation at Himaya Siargao - Deluxe Villa (Max of 2 Adults)");
+                    println("\t-", "Daily Breakfast");
+                    println("\t-", "Roundtrip airport transfers to/from Sayak Airport (IAO)");
+                    println("\t-", "Day 2 - Free Siargao Tri-Island Hopping Day Tour with Transfers");
+                    println("\t-", "Free Use of Common Kitchen & Common Area");
+                    println("\t-", "Free Wi-Fi at the Common Spaces");
+                    println("\t-", "Free Drinking Water");
+                    println("\t-", "All environmental, port fees, and all other applicable taxes");
+                    println("\tPRICE:", "PHP", "20,999.00");
                     boolean c = confirmation("Confirm selected package?");
                     if (c)
                         println("Cancelled.");
                     else {
-                        touristDetails = new Tourist(20,359.00);
+                        touristDetails = new Tourist(20999.00);
                         touristDetails.register();
                     }
                     break;
