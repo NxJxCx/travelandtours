@@ -313,7 +313,7 @@ class Tourist {
         System.out.println("#--------------------------------------------------");
         System.out.println("# Tourists: ");
         for (int i = 0; i < this.tourists.length; i++) {
-            System.out.println((i+1) + ") " + this.tourists[i]);
+            System.out.println("# " + (i+1) + ") " + this.tourists[i]);
         }
         System.out.println("#*************************************************");
     }
