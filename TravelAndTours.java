@@ -215,8 +215,14 @@ public class TravelAndTours {
                         touristDetails.register();
                     }
                     break;
-                default:
+                case 'x':
                     isDone = true;
+                    break;
+                case '0':
+                    isDone = true;
+                    break;
+                default:
+                    // do nothing
             }
             if (isDone)
                 break;
