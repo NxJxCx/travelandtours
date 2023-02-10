@@ -1,4 +1,4 @@
-// Travel and Tour Packages in Java (Object Oriented Programming)
+// Travel and Tour Package in Java (Object Oriented Programming)
 // Neil Jason Cañete
 
 import java.util.*;
